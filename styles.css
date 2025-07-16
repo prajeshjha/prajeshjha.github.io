@@ -1,0 +1,61 @@
+<style>
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
+    header { background-color: #2d2a5d; color: white; display: flex; align-items: center; padding: 1.2rem 2rem; justify-content: space-between; }
+    header .logo { display: flex; align-items: center; gap: 1rem; }
+    header .logo img { max-height: 90px; }
+    header .logo h1 { margin: 0; font-size: 1.8rem; }
+    nav { background: #1f1d3a; display: flex; justify-content: center; gap: 2rem; padding: 1rem; }
+    nav a { color: white; text-decoration: none; font-weight: 500; }
+    .section { padding: 3rem 2rem; max-width: 960px; margin: auto; }
+    .hero { background-color: #ecebff; padding: 4rem 2rem; text-align: center; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .card { background-color: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .card:nth-child(1) { background-color: #fff7e6; }
+    .card:nth-child(2) { background-color: #e0f7f6; }
+    .card:nth-child(3) { background-color: #dceefb; }
+    .card:nth-child(4) { background-color: #ffeedd; }
+    .card h3 { margin-top: 0; color: #2d2a5d; }
+    .card ul { padding-left: 1rem; }
+    .card ul li { margin-bottom: 0.5rem; }
+    h2 { color: #2d2a5d; }
+    .subpage { margin-top: 2rem; background: #f0f0fa; padding: 2rem; border-radius: 10px; }
+    .subpage h2 { margin-top: 0; }
+    a { color: #2d2a5d; text-decoration: none; }
+    footer { background-color: #2d2a5d; color: white; text-align: center; padding: 1.5rem; }
+	body { font-family: Arial, sans-serif; background: #f9fbfe; color: #222; margin: 0; padding: 0; }
+    header { background: #001f3f; color: white; padding: 50px 20px; text-align: center; }
+    section { max-width: 1100px; margin: auto; padding: 40px 20px; }
+    h1 { color: white; }
+	h2 { color: grey; }
+    .highlight { background: #e6f0ff; border-left: 5px solid #0074D9; padding: 20px; margin: 20px 0; }
+    .price-box {
+      background: #fff3cd;
+      border-left: 5px solid #ffbf00;
+      padding: 20px;
+      font-size: 1.1em;
+      margin: 30px 0;
+    }
+    a.button {
+      display: inline-block;
+      background: #0074D9;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+    footer { background: #001f3f; color: white; text-align: center; padding: 25px; margin-top: 40px; }
+	 nav { background: #1f1d3a; display: flex; justify-content: center; gap: 2rem; padding: 1rem; }
+    nav a { color: white; text-decoration: none; font-weight: 500; }
+	 body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8fafc; color: #222; line-height: 1.6; }
+    header { background: #011f3f; color: #fff; text-align: center; padding: 60px 20px; }
+    header h1 { font-size: 2.4rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; max-width: 800px; margin: auto; }
+    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #002b5c; margin-top: 40px; font-size: 1.6rem; }
+    ul { list-style-type: disc; padding-left: 20px; }
+    .bio-box { background: #eef6ff; padding: 25px; border-left: 6px solid #0074D9; margin-top: 30px; font-size: 1.05rem; }
+    footer { background: #001f3f; color: #fff; text-align: center; padding: 25px; margin-top: 60px; }
+  </style>
