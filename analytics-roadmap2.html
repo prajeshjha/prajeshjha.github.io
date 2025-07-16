@@ -1,0 +1,111 @@
+import React from 'react';
+
+const App = () => {
+  const roadmapStages = [
+    { title: 'Define Business Vision & Priorities', description: 'Translate enterprise goals into analytics-aligned objectives. Use design-thinking workshops to generate stakeholder-aligned ideas.' },
+    { title: 'Ideation & Prioritization', description: 'Facilitate collaborative ideation. Rank use cases using a value vs. complexity matrix to prioritize for feasibility and impact.' },
+    { title: 'Value & Complexity Assessment', description: 'Build business cases, estimate benefits, and align implementation effort using structured frameworks for ROI-driven decisions.' },
+    { title: 'Capability & Organizational Blueprint', description: 'Map analytics capabilities (e.g., pricing, churn prediction). Assess maturity, skills, governance, and CoE models. Plan in-house vs. outsourcing strategies.' },
+    { title: 'Technical Roadmap & Platform Strategy', description: 'Audit current infrastructure and evaluate tech options. Plan platform sequencing and implementation milestones. Select cloud, AI platforms, and tools aligned with capabilities.' },
+    { title: 'Delivery Planning & Execution', description: 'Conduct planning workshops to align teams and finalize the roadmap. Assign ownership and set timelines for execution.' },
+    { title: 'Early Wins & Fast Feedback', description: 'Pilot early use cases to demonstrate value quickly. Refine based on real-time feedback and build momentum.' },
+  ];
+
+  const sprintActivities = [
+    { week: 'Week 1–2', activities: 'Stakeholder interviews, data/process assessments, ideation workshops' },
+    { week: 'Week 2', activities: 'Use case prioritization, metric definition, business case sketching' },
+    { week: 'Week 3', activities: 'Roadmap finalization, platform strategy, governance planning, pilot kickoff' },
+  ];
+
+  const whatYouGet = [
+    'Business-aligned analytics vision',
+    'Prioritized use-case backlog',
+    'Organization & talent model',
+    'Technology and platform roadmap',
+    'Governance and value realization plan',
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-100 p-4 font-inter text-gray-800">
+      <div className="max-w-6xl mx-auto bg-white rounded-lg shadow-xl p-6 md:p-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-8">
+          Analytics Roadmap: Strategy & Advisory
+        </h1>
+
+        {/* Roadmap Stages Flow Diagram */}
+        <section className="mb-12 p-6 bg-blue-50 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold text-blue-700 mb-6 text-center">
+            Analytics Roadmap Stages
+          </h2>
+          <div className="relative flex flex-col items-center">
+            {roadmapStages.map((stage, index) => (
+              <React.Fragment key={index}>
+                <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-5 mb-6 border-2 border-blue-200 hover:border-blue-400 transition-all duration-300 transform hover:scale-105">
+                  <h3 className="text-xl font-bold text-blue-800 mb-2">{`${index + 1}. ${stage.title}`}</h3>
+                  <p className="text-sm text-gray-700">{stage.description}</p>
+                </div>
+                {index < roadmapStages.length - 1 && (
+                  <div className="w-1 bg-blue-300 h-12 flex items-center justify-center relative">
+                    <div className="absolute w-4 h-4 bg-blue-500 rounded-full -top-2"></div>
+                    <svg className="absolute bottom-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+        </section>
+
+        {/* Sample 3-Week Focus Sprint Timeline */}
+        <section className="mb-12 p-6 bg-green-50 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold text-green-700 mb-6 text-center">
+            Sample 3-Week Focus Sprint Timeline
+          </h2>
+          <div className="relative flex flex-col md:flex-row justify-center items-stretch md:items-start gap-6">
+            {sprintActivities.map((sprint, index) => (
+              <React.Fragment key={index}>
+                <div className="relative flex-1 bg-white rounded-xl shadow-lg p-5 border-2 border-green-200 hover:border-green-400 transition-all duration-300 transform hover:scale-105 min-w-[280px]">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                    {sprint.week}
+                  </div>
+                  <h3 className="text-lg font-bold text-green-800 mt-4 mb-2">Activities:</h3>
+                  <p className="text-sm text-gray-700">{sprint.activities}</p>
+                </div>
+                {index < sprintActivities.length - 1 && (
+                  <div className="hidden md:flex items-center justify-center h-full w-12 relative">
+                    <div className="w-full h-1 bg-green-300 absolute top-1/2 transform -translate-y-1/2"></div>
+                    <svg className="absolute left-1/2 transform -translate-x-1/2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </div>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+        </section>
+
+        {/* What You Get Section (List) */}
+        <section className="p-6 bg-purple-50 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold text-purple-700 mb-6 text-center">
+            What You Get
+          </h2>
+          <ul className="list-disc list-inside text-gray-700 space-y-2 max-w-xl mx-auto">
+            {whatYouGet.map((item, index) => (
+              <li key={index} className="flex items-start">
+                <span className="text-purple-500 mr-2 mt-1">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                  </svg>
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
+    </div>
+  );
+};
+
+export default App;
