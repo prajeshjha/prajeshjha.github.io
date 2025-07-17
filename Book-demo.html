@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Demo | Durga Analytics</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+  
+  <section class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-2xl shadow-md">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-4">Book a Free Demo</h2>
+    <p class="text-gray-600 mb-6">
+      Discover how Durga Analytics can transform your data strategy and empower better decision-making. Fill out the form below and we'll schedule a personalized walkthrough.
+    </p>
+
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-6" method="POST"  action="https://formspree.io/f/xrblgrwr">
+      <div>
+        <label class="block mb-1 text-sm font-medium text-gray-700">Full Name</label>
+        <input type="text"  name ="Full_Name" placeholder="Your name" class="w-full p-3 border rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+      </div>
+
+      <div>
+        <label class="block mb-1 text-sm font-medium text-gray-700">Email</label>
+        <input type="email" name ="email" placeholder="you@company.com" class="w-full p-3 border rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+      </div>
+
+      <div>
+        <label class="block mb-1 text-sm font-medium text-gray-700">Company</label>
+        <input type="text"  name ="Company" placeholder="Company name" class="w-full p-3 border rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+      </div>
+
+      <div>
+        <label class="block mb-1 text-sm font-medium text-gray-700">Phone Number</label>
+        <input type="tel"  name ="Phone_Number" placeholder="+91 98765 43210" class="w-full p-3 border rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+      </div>
+
+      <div class="md:col-span-2">
+        <label class="block mb-1 text-sm font-medium text-gray-700">What would you like to discuss?</label>
+        <textarea rows="4"  name ="discuss_point" placeholder="e.g., Data Strategy, AI Roadmap, Platform Modernization" class="w-full p-3 border rounded-lg focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+      </div>
+
+      <div class="md:col-span-2">
+        <button type="submit" class="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg hover:bg-indigo-700 transition">Book My Demo</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="mt-10 text-center text-gray-500 text-sm">
+    © 2025 Durga Analytics. All rights reserved.
+  </footer>
+</body>
+</html>
