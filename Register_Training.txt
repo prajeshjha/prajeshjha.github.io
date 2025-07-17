@@ -1,61 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF‑8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Corporate Training | Databricks Bootcamp</title>
-  <meta name="description" content="Databricks corporate training program focused on real-time analytics, data engineering, and AI workflows. Taught by Prajesh Jha. Starting ₹49,000." />
-  <meta name="keywords" content="Databricks Training, Spark Bootcamp, Data Engineering, Delta Lake, Lakehouse, Prajesh Jha, Data Analytics, Corporate Data Bootcamp" />
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corporate Training: Databricks Bootcamp | Durga Analytics</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="description" content="Register your team for Durga Analytics’ hands-on Databricks Bootcamp – a corporate training designed for modern data teams.">
 </head>
-<body>
-  <header>
-    <h1>Corporate Training: Databricks Bootcamp</h1>
-    <p>Master Spark, Lakehouse, and Scalable Data Workflows with Real-World Use Cases</p>
-  </header>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="#services">Services</a>
-    <a href="analytics-roadmap.html">Analytics Roadmap</a>
-    <a href="#industries">Industries</a>
-    <a href="about.html">About</a>
-	<a href="Leadership.html">Leadership</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <section>
-    <h2>Program Overview</h2>
-    <p>This hands-on training is designed for data teams aiming to leverage the Databricks platform to build scalable data pipelines, perform advanced analytics, and integrate AI/ML workflows in a modern cloud environment.</p>
-
-    <div class="highlight">
-      <strong>Core Modules:</strong>
-      <ul>
-        <li>Databricks & Spark Architecture</li>
-        <li>Delta Lake and Structured Streaming</li>
-        <li>ETL Pipeline Development using PySpark</li>
-        <li>SQL Warehousing, Unity Catalog, and Lakehouse</li>
-        <li>Data Quality, Monitoring, and Governance</li>
-      </ul>
-    </div>
-
-    <h2>Who Should Attend</h2>
-    <ul>
-      <li>Data Engineers and Architects</li>
-      <li>Analytics and BI Professionals</li>
-      <li>Platform Engineers and Cloud Architects</li>
-      <li>Anyone preparing for Databricks Certification</li>
-    </ul>
-
-    <div class="price-box">
-      <strong>Course Fee:</strong> ₹49,000 (INR) per participant<br/>
-      <strong>Delivery:</strong> Live sessions + Labs | Available Online & On-Site<br/>
-    </div>
-
-<!-- Corporate Training Registration Section -->
-    <a href="mailto:contact@durgaanalytics.com" class="button">📩 Enquire Now</a>
-  </section>
+<body class="bg-gray-50 font-sans leading-relaxed text-gray-800">
   
-<!-- Form Section -->
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-indigo-600">Durga Analytics</h1>
+      <nav>
+        <a href="/" class="text-sm text-indigo-600 hover:underline">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-50 py-10">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-indigo-700 mb-4">Corporate Training: Databricks Bootcamp</h2>
+      <p class="text-gray-600 text-lg mb-6">Register your organization for our hands-on Databricks training – customized for teams looking to scale analytics with Spark, Delta, and ML in the cloud.</p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
   <section class="max-w-3xl mx-auto bg-white p-8 mt-6 rounded-xl shadow-md">
     <form action="#" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div>
@@ -100,7 +72,7 @@
 
       <div class="md:col-span-2">
         <button type="submit" class="w-full bg-indigo-600 text-white text-lg font-semibold py-3 rounded-md hover:bg-indigo-700 transition">
-          Register for Databricks Bootcamp
+          Register for Bootcamp
         </button>
       </div>
     </form>
@@ -116,8 +88,11 @@
       <span>Public Sector</span>
     </div>
   </section>
-  <footer>
-    <p>&copy; 2025 Durga Analytics | Training by Prajesh Jha</p>
+
+  <!-- Footer -->
+  <footer class="mt-12 py-6 text-center text-gray-500 text-sm">
+    © 2025 Durga Analytics · Empowering Decisions with Data & AI
   </footer>
+
 </body>
 </html>
