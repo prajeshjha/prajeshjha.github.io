@@ -6,6 +6,7 @@
   <title>Data Strategy | Durga Analytics</title>
   <meta name="description" content="Durga Analytics helps organizations build a future-ready data strategy aligned to business goals. Explore our Strategy & Advisory services." />
   <meta name="keywords" content="Data Strategy, Strategy and Advisory, Business Alignment, Data Governance, Data Roadmap, Durga Analytics" />
+  <link href="styles.css" rel="stylesheet">
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f9fafc; color: #333; line-height: 1.6; }
     header { background: #001f3f; color: #fff; padding: 40px 20px; text-align: center; }
@@ -15,14 +16,80 @@
     li { margin-bottom: 10px; }
     .highlight { background: #e8f0fb; padding: 20px; border-left: 5px solid #0074D9; margin: 30px 0; }
     footer { background: #001f3f; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+	/* ========== NAVIGATION MENU ========== */
+nav {
+  background: #1f1d3a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+header {
+  background-color: #2d2a5d; /* dark background for contrast */
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+header .logo img {
+  max-height: 60px;
+  height: auto;
+  width: auto;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white; /* ensures white color for the heading */
+  white-space: nowrap;
+}
   </style>
 </head>
 <body>
   <header>
-    <h1>Data Strategy</h1>
-    <p>Strategy & Advisory for building data capabilities aligned to business outcomes</p>
+  <div class="logo">
+      <img src="Durga Analytics.png" alt="Durga Analytics Logo">
+        <h1>Data Strategy</h1>
+    </div>
   </header>
-
+  <nav id="main-nav">
+  <a href="index.html" >Home</a>
+  <a href="services.html" class="active">Services</a>
+  <a href="analytics-roadmap.html">Analytics Roadmap</a>
+  <a href="industries.html">Industries</a>
+  <a href="about.html">About</a>
+  <a href="leadership.html">Leadership</a>
+  <a href="contact.html">Contact</a>
+  <a href="training.html">Training</a>
+  <a href="careers.html">Careers</a>
+  <a href="blog.html">Blog</a>
+  <a href="faqs.html">FAQs</a>
+</nav>
   <section>
     <h2>Why Data Strategy?</h2>
     <p>In an increasingly data-driven world, organizations must go beyond ad-hoc data projects and adopt a holistic, value-aligned approach to data. Durga Analytics empowers you to build a pragmatic, future-ready data strategy that drives innovation, operational efficiency, and decision intelligence.</p>
@@ -51,7 +118,53 @@
       <li><a href="platform-strategy.html">Platform Strategy</a></li>
     </ul>
   </section>
-
+<section id="services" class="section">
+    <h2>All Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Strategy & Advisory</h3>
+        <ul>
+          <li><a href="analytics-roadmap.html">Analytics Roadmap</a></li>
+          <li><a href="data-strategy.html">Data Strategy</a></li>
+          <li><a href="platform-strategy.html">Platform Strategy</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Engineer Your Data</h3>
+        <ul>
+          <li><a href="data-modernization.html">Data Modernization</a></li>
+          <li><a href="data-foundation.html">Data Foundation</a></li>
+          <li><a href="data-operations.html">Data Operations</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Differentiate with AI/ML</h3>
+        <ul>
+          <li><a href="data-science.html">Data Science</a></li>
+          <li><a href="ai-engineering.html">AI Engineering</a></li>
+          <li><a href="ml-products-platforms.html">ML Products & Platforms</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Operationalize Insights</h3>
+        <ul>
+          <li><a href="experience-consulting.html">Experience Consulting</a></li>
+          <li><a href="application-engineering.html">Application Engineering</a></li>
+          <li><a href="business-intelligence.html">Business Intelligence</a></li>
+          <li><a href="mlops.html">MLOps</a></li>
+        </ul>
+      </div>
+	  <div class="card">
+        <h3>Training services</h3>
+        <ul>
+          <li><a href="Databricks_Bootcamp.html">Databricks Bootcamp</a></li>
+          <li><a href="snowflake_training.html">Snowflake</a></li>
+          <li><a href="ETRM_TRaining.html">ETRM</a></li>
+        </ul>
+      </div>
+    </div>
+	
+  </section>
   <footer>
     <p>&copy; 2025 Durga Analytics | Strategy & Advisory</p>
   </footer>

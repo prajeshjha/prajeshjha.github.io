@@ -21,13 +21,81 @@
     header .logo h1 { margin: 0; font-size: 1.8rem; }
 	nav { background: #001f3f; display: flex; justify-content: center; gap: 2rem; padding: 1rem; }
     nav a { color: white; text-decoration: none; font-weight: 500; }
+	/* ========== NAVIGATION MENU ========== */
+nav {
+  background: #1f1d3a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+header {
+  background-color: #2d2a5d; /* dark background for contrast */
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+header .logo img {
+  max-height: 60px;
+  height: auto;
+  width: auto;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white; /* ensures white color for the heading */
+  white-space: nowrap;
+}
+
   </style>
 </head>
 <body>
   <header>
+        <div class="logo">
+      <img src="Durga Analytics.png" alt="Durga Analytics Logo">
       <h1>About Durga Analytics</h1>
-    <p>Inspired by the strength and clarity of Goddess Durga, we bring strategy, technology, and purpose together to enable data-driven transformation at scale.</p>
+    </div>
   </header>
+  <nav id="main-nav">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="analytics-roadmap.html">Analytics Roadmap</a>
+  <a href="industries.html">Industries</a>
+  <a href="about.html"  class="active">About</a>
+  <a href="leadership.html">Leadership</a>
+  <a href="contact.html">Contact</a>
+  <a href="training.html">Training</a>
+  <a href="careers.html">Careers</a>
+  <a href="blog.html">Blog</a>
+  <a href="faqs.html">FAQs</a>
+</nav>
 
   <section>
     <h2>Who We Are</h2>

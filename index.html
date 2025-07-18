@@ -44,25 +44,123 @@
     p { line-height: 1.6; }
     .industry { background-color: #fff; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
     footer { background-color: #2d2a5d; color: white; text-align: center; padding: 1.5rem; margin-top: 2rem; }
+	header {
+  background-color: #2d2a5d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center logo */
+  padding: 1.2rem 2rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+/* ========== HEADER STYLES ========== */
+header {
+  background-color: #2d2a5d;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+/* Logo banner fills full width */
+.logo-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Title below the banner */
+.site-title {
+  margin: 1rem 0 0 0;
+  font-size: 2rem;
+  color: white;
+}
+
+/* If using horizontal logo + title instead */
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  padding: 1.2rem 2rem;
+}
+
+header .logo img {
+  max-height: 60px;
+  height: auto;
+  width: auto;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white;
+  white-space: nowrap;
+}
+
+/* ========== NAVIGATION MENU ========== */
+nav {
+  background: #1f1d3a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-logo {
+  animation: fadeIn 2s ease-in-out;
+}
+
+
   </style>
 </head>
 <body>
-   <header>
-    <div class="logo">
-      <img src="Durga Analytics.png" alt="Durga Analytics Logo">
-      <h1>Durga Analytics</h1>
-    </div>
-  </header>
+  <header>
+  <div class="logo-banner">
+    <img src="Durga Analytics.png" alt="Durga Analytics Logo" class="fade-in-logo">
+  </div>
+  
+</header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="analytics-roadmap.html">Analytics Roadmap</a>
-    <a href="industries.html">Industries</a>
-    <a href="about.html">About</a>
-	<a href="Leadership.html">Leadership</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+
+  <nav id="main-nav">
+  <a href="index.html" class="active">Home</a>
+  <a href="services.html">Services</a>
+  <a href="analytics-roadmap.html">Analytics Roadmap</a>
+  <a href="industries.html">Industries</a>
+  <a href="about.html">About</a>
+  <a href="leadership.html">Leadership</a>
+  <a href="contact.html">Contact</a>
+  <a href="training.html">Training</a>
+  <a href="careers.html">Careers</a>
+  <a href="blog.html">Blog</a>
+  <a href="faqs.html">FAQs</a>
+</nav>
+
 
   <section id="home" class="hero">
     <h1>Empowering Decisions with Data & AI</h1>
@@ -198,5 +296,14 @@
   <footer>
     <p>&copy; 2025 Durga Analytics. All rights reserved.</p>
   </footer>
+  <script>
+ window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('main-nav').scrollIntoView({ behavior: 'smooth' });
+  }, 1000); // delay by 2 seconds to let logo fade-in finish
+});
+
+</script>
+
 </body>
 </html>
