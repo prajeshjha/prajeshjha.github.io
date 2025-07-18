@@ -177,17 +177,5 @@ header .logo h1 {
   color: white; /* ensures white color for the heading */
   white-space: nowrap;
 }
-nav {
-  background: #1f1d3a;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
+
   </style>
