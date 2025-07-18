@@ -107,7 +107,13 @@ nav {
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
+
 
 nav a {
   color: white;
@@ -305,7 +311,7 @@ nav a.active {
   <script>
  window.addEventListener('load', () => {
   setTimeout(() => {
-    document.getElementById('main-nav').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
   }, 1000); // delay by 2 seconds to let logo fade-in finish
 });
 
