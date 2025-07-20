@@ -8,7 +8,75 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   
   <link href="styles.css" rel="stylesheet">
-  
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8fafc; color: #222; line-height: 1.6; }
+    header { background: #011f3f; color: #fff; text-align: center; padding: 60px 20px; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; max-width: 800px; margin: auto; }
+    section { padding: 50px 20px; max-width: 1100px; margin: auto; }
+    h2 { color: #002b5c; font-size: 1.8rem; margin-top: 40px; }
+    ul { list-style-type: disc; padding-left: 20px; }
+    .highlight { background: #eef6ff; padding: 25px; border-left: 6px solid #0074D9; margin: 40px 0; font-size: 1.05rem; }
+    footer { background: #001f3f; color: #fff; text-align: center; padding: 25px; margin-top: 60px; }
+	 header .logo { display: flex; align-items: center; gap: 1rem; }
+    header .logo img { max-height: 90px; }
+    header .logo h1 { margin: 0; font-size: 1.8rem; }
+	nav { background: #001f3f; display: flex; justify-content: center; gap: 2rem; padding: 1rem; }
+    nav a { color: white; text-decoration: none; font-weight: 500; }
+	/* ========== NAVIGATION MENU ========== */
+nav {
+  background: #1f1d3a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+header {
+  background-color: #2d2a5d; /* dark background for contrast */
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+header .logo img {
+  max-height: 60px;
+  height: auto;
+  width: auto;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white; /* ensures white color for the heading */
+  white-space: nowrap;
+}
+
+  </style>
 </head>
 <body>
 
