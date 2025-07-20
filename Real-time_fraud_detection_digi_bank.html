@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study: Real-time Fraud Detection | Durga Analytics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #1e293b;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1, h2, h3 {
+      color: #1e293b;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    .highlight {
+      background: #e0f2fe;
+      padding: 1rem;
+      border-left: 4px solid #0284c7;
+      margin: 1rem 0;
+    }
+    .cta {
+      background: #0284c7;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 3rem;
+      font-weight: 600;
+    }
+    .cta a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Case Study: Real-time Fraud Detection with Streaming Models</h1>
+    <p>Transforming fraud prevention for a digital-first bank with Durga Analytics</p>
+  </header>
+  <main>
+    <section>
+      <h2>Client Overview</h2>
+      <p><strong>Client:</strong> Confidential Digital Bank<br>
+         <strong>Industry:</strong> Neo Banking / Fintech<br>
+         <strong>Duration:</strong> 3 Months (MVP to Deployment)</p>
+    </section>
+
+    <section>
+      <h2>Business Challenge</h2>
+      <p>The client was struggling to prevent fraud effectively due to reactive batch processing, high false positives, and inability to scale detection as UPI and card volumes grew. A modern fraud detection system was needed to detect anomalies in real time and reduce financial risk without increasing friction for genuine users.</p>
+    </section>
+
+    <section>
+      <h2>Our Solution</h2>
+      <p>Durga Analytics developed a high-performance streaming fraud detection platform combining machine learning, rules-based detection, and anomaly scoring. It was designed to operate at millisecond latency with hybrid signals across channels.</p>
+      <ul>
+        <li>Integrated real-time data ingestion using <strong>Apache Kafka</strong></li>
+        <li>Deployed ML classification model with <strong>Spark Structured Streaming</strong></li>
+        <li>Added rule engine for thresholds, velocity checks, geolocation flags</li>
+        <li>Deployed containerized microservices with <strong>FastAPI</strong></li>
+        <li>Latency achieved: < 200ms per transaction</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Key Outcomes</h2>
+      <div class="highlight">
+        <ul>
+          <li><strong>48% increase</strong> in true fraud detection</li>
+          <li><strong>37% reduction</strong> in false positives</li>
+          <li>Alert volumes optimized with <strong>3x improvement</strong> in fraud team efficiency</li>
+          <li>Enabled <strong>real-time blocking</strong> of high-risk UPI and card transactions</li>
+          <li>Delivered <strong>real-time dashboards</strong> for fraud operations</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technology Stack</h2>
+      <p><strong>Streaming & Data:</strong> Kafka, Spark, Redis<br>
+         <strong>Modeling:</strong> Python, MLlib, Scikit-learn<br>
+         <strong>APIs & Infra:</strong> FastAPI, Docker, PostgreSQL, Grafana<br>
+         <strong>Deployment:</strong> AWS EC2, Lambda, EKS (pilot cluster)</p>
+    </section>
+
+    <section>
+      <h2>Client Testimonial</h2>
+      <blockquote>
+        “Durga Analytics delivered a real-time fraud detection platform that has significantly improved our operational control and reduced our exposure to high-risk behavior. The blend of ML and stream processing has changed the way we manage fraud.”<br>
+        — VP, Fraud Risk Management
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>Next Steps</h2>
+      <p>Durga Analytics is now supporting the client in extending the platform to include device fingerprinting, behavioral biometrics, and federated learning to combat new fraud vectors in the ecosystem.</p>
+    </section>
+
+    <div class="cta">
+      <p>Looking to detect fraud in real-time? <a href="#contact">Get in touch with our AI & DataOps team</a></p>
+    </div>
+  </main>
+</body>
+</html>
