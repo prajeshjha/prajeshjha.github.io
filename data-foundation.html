@@ -68,9 +68,31 @@
 
     <h2>Client Impact</h2>
     <ul>
-      <li>Enabled a data mesh foundation for a leading e-commerce firm, accelerating AI development by 3x</li>
-      <li>Established a standardized semantic layer and reusable models for a fintech player, cutting report duplication by 60%</li>
-    </ul>
+      <li><h2>Enabled a data mesh foundation for a leading e-commerce firm, accelerating AI development by 3x</h2></li>
+	  <h3>Pre-Architecture:</h3>
+<p>
+The e-commerce firm operated on a centralized monolithic data architecture, where all data from different source systems like the website, orders, CRM, inventory, and payments flowed into a central data warehouse through a centralized ETL pipeline. A dedicated data engineering team managed ingestion, transformation, and access control, creating a bottleneck for data availability. Business and data science teams relied heavily on curated datasets, and cross-functional dependencies delayed AI model development. The lack of data ownership at the domain level made experimentation slow and scalability difficult. As a result, developing new AI products or updating existing ones required weeks of coordination, limiting innovation and responsiveness.
+</p>
+
+<h3>Post-Architecture:</h3>
+<p>
+With the implementation of a data mesh architecture, the organization shifted to a domain-oriented, decentralized model. Each business unit (like Orders, Inventory, Payments, etc.) became a data product owner, responsible for managing, exposing, and maintaining its own data using scalable platforms such as Snowflake, ADLS, or Delta Lake. These domain teams followed standardized governance and interoperability rules enforced by a unified data catalog and access layer (e.g., Unity Catalog or Azure Purview). This enabled data scientists and AI teams to directly access high-quality, real-time domain-specific data, allowing faster iteration on ML models. The result was a 3x acceleration in AI development, improved collaboration across teams, and significantly enhanced time-to-insight for analytics and product innovation.
+</p>
+	   <img src="Services/data-foundation/data_mesh_foundation.png" alt="Azure Data Lake Architecture" style="max-width:100%; height:auto; border:1px solid #ccc; padding:10px; background:#fff;">
+      <li>
+  <h2>Established a standardized semantic layer and reusable models for a fintech player, cutting report duplication by 60%</h2>
+  <br><br>
+  <img src="Services/data-foundation/standardized_semantic_layer.png"
+       alt="Semantic Layer and Reusable Models Architecture"
+       style="max-width:100%; height:auto; border:1px solid #ccc; padding:10px; background:#fff;">
+  <br><br>
+  <strong>Pre-Architecture:</strong>
+  The fintech organization faced reporting chaos due to siloed analytics teams using inconsistent logic and KPIs across departments. Reports were often created independently with overlapping but conflicting SQL queries, leading to significant duplication, maintenance overhead, and decision-making delays. Without a unified semantic layer, business users struggled to trust the data, and data engineers spent excessive time reconciling metrics.
+  <br><br>
+  <strong>Post-Architecture:</strong>
+  Durga Analytics implemented a centralized semantic layer using tools like dbt, Looker, or Power BI’s model layer, standardizing core metrics (e.g., customer lifetime value, transaction velocity) and business definitions. Reusable models were created for common data entities—customers, transactions, products—enabling consistent, self-service reporting across the organization. This led to a 60% reduction in duplicated reports, improved stakeholder confidence, and dramatically faster onboarding for new use cases.
+</li>
+    
   </section>
 <section id="services" class="section">
     <h2>All Services</h2>
