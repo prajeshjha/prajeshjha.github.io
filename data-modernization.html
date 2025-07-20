@@ -72,7 +72,7 @@
 	  <h2>
   Replaced legacy data warehouse with a real-time Azure Data Lake solution, improving data availability by 80%
   </h2>
-  <br><br>
+  <br>
   
   <strong>Pre Architecture:</strong> Monolithic on-premise data warehouse with batch ingestion, limited scalability, and delayed reporting cycles (24–48 hours).
   <br><br>
@@ -85,10 +85,10 @@
       <li>Built ingestion and reporting platform on Snowflake for a retail bank, reducing reporting delays from 2 days to 2 hours</li>
 	   </h2>
 	   <li>
-  Built ingestion and reporting platform on Snowflake for a retail bank, reducing reporting delays from 2 days to 2 hours
   <br><br>
   
   <strong>Pre Architecture:</strong> Fragmented on-prem databases (Core Banking, Cards, CRM) feeding a legacy EDW via nightly/weekly batch ETL (SSIS/hand-coded scripts). Long data latency (T+2 days), duplicate logic in Excel/desktop BI, limited scalability during month-end, manual data quality checks, and slow onboarding of new data sources (4–6 weeks).
+  <br><br>
   
   <strong>Post Architecture:</strong> Central Snowflake multi-cluster warehouse on cloud object storage; automated ingestion (change data capture + incremental batch + near real-time streams via Kafka/Fivetran/Snowpipe), standardized raw → curated → semantic layers (dbt / SQL). Orchestrated transformations (Airflow/Prefect) with automated data quality tests (Great Expectations) and role-based security (RBAC + masking). Unified metrics layer powering self-service BI dashboards; SLA-driven pipelines delivering refreshed data every 15–30 minutes (2-hour → near real-time), accelerating analytics & regulatory reporting.
   <br><br>
