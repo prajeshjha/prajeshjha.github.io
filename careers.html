@@ -15,9 +15,7 @@
 <body>
   <header class="bg-[#2d2a5d] text-white py-6 text-center">
     <h1 class="text-3xl font-bold">Join Our Team</h1>
-	
-   
-  </header>
+</header>
 <nav id="main-nav">
   <a href="index.html" >Home</a>
   <a href="services.html">Services</a>
@@ -32,9 +30,10 @@
   <a href="faqs.html">FAQs</a>
 </nav>
  
+
   <section class="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-md">
   
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data" class="grid grid-cols-1 gap-6">
+    <form name="JoinOurTeam" data-netlify="true" method="POST" enctype="multipart/form-data" action="/thank-you" class="grid grid-cols-1 gap-6">
       
       <div>
         <label class="block mb-1">Full Name</label>
@@ -51,6 +50,11 @@
         <input type="tel" name="Phone" class="w-full p-3 border rounded-lg" placeholder="+91 98765 43210" />
       </div>
 
+	<div>
+        <label class="block mb-1">Position</label>
+        <input type="text" name="Position" required class="w-full p-3 border rounded-lg" placeholder="Data Platform Engineer, DevOps Engineer, Full Stack Engineer" />
+      </div>
+	  
       <div>
         <label class="block mb-1">Message</label>
         <textarea name="Message" rows="4" class="w-full p-3 border rounded-lg" placeholder="Write a brief message or cover letter"></textarea>
@@ -60,12 +64,32 @@
         <label class="block mb-1">Upload CV (PDF/DOC)</label>
         <input type="file" name="CV" accept=".pdf,.doc,.docx" required class="w-full p-3 border rounded-lg" />
       </div>
-
+	<input type="hidden" name="bot-field" />
       <button type="submit" class="bg-indigo-600 text-white py-3 px-6 rounded-lg hover:bg-indigo-700 transition">
         Submit Application
       </button>
     </form>
   </section>
+  <section class="max-w-4xl mx-auto mt-8 px-6">
+  <h2 class="text-2xl font-semibold text-[#2d2a5d] mb-4">Open Positions</h2>
+  <ul class="space-y-4">
+    <li>
+      <a href="jobs/etrm-endur-trainer.html" class="text-lg text-indigo-700 hover:underline">ETRM Endur Trainer</a>
+    </li>
+    <li>
+      <a href="jobs/data-platform-engineer.html" class="text-lg text-indigo-700 hover:underline">Data Platform Engineer</a>
+    </li>
+    <li>
+      <a href="jobs/devops-engineer.html" class="text-lg text-indigo-700 hover:underline">DevOps Engineer</a>
+    </li>
+    <li>
+      <a href="jobs/full-stack-engineer.html" class="text-lg text-indigo-700 hover:underline">Full Stack Engineer</a>
+    </li>
+    <li>
+      <a href="jobs/co-founder.html" class="text-lg text-indigo-700 hover:underline">Co-Founder</a>
+    </li>
+  </ul>
+</section>
 <section id="services" class="section">
     <h2>All Services</h2>
     <div class="cards">
