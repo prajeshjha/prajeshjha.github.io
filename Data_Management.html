@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAMA DMBOK v2 – Data Management Training</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8fafc; color: #222; line-height: 1.6; }
+    header { background: #011f3f; color: #fff; text-align: center; padding: 60px 20px; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; max-width: 800px; margin: auto; }
+    section { padding: 50px 20px; max-width: 1100px; margin: auto; }
+    h2 { color: #002b5c; font-size: 1.8rem; margin-top: 40px; }
+    ul { list-style-type: disc; padding-left: 20px; }
+    .highlight { background: #eef6ff; padding: 25px; border-left: 6px solid #0074D9; margin: 40px 0; font-size: 1.05rem; }
+    footer { background: #001f3f; color: #fff; text-align: center; padding: 25px; margin-top: 60px; }
+	 header .logo { display: flex; align-items: center; gap: 1rem; }
+    header .logo img { max-height: 90px; }
+    header .logo h1 { margin: 0; font-size: 1.8rem; }
+	nav { background: #001f3f; display: flex; justify-content: center; gap: 2rem; padding: 1rem; }
+    nav a { color: white; text-decoration: none; font-weight: 500; }
+	/* ========== NAVIGATION MENU ========== */
+nav {
+  background: #1f1d3a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+header {
+  background-color: #2d2a5d; /* dark background for contrast */
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+header .logo img {
+  max-height: 60px;
+  height: auto;
+  width: auto;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white; /* ensures white color for the heading */
+  white-space: nowrap;
+}
+
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-blue-900 text-white">
+  <nav id="main-nav">
+  <a href="index.html" >Home</a>
+  <a href="services.html">Services</a>
+  <a href="analytics-roadmap.html">Analytics Roadmap</a>
+  <a href="industries.html">Industries</a>
+  <a href="about.html">About</a>
+  <a href="leadership.html">Leadership</a>
+  <a href="contact.html">Contact</a>
+  <a href="training.html"  class="active">Training</a>
+  <a href="careers.html">Careers</a>
+  <a href="blog.html">Blog</a>
+  <a href="faqs.html">FAQs</a>
+</nav>
+
+    <div class="max-w-7xl mx-auto p-6">
+      <h1 class="text-3xl font-bold">Enterprise Data Management Training</h1>
+      <p class="text-lg">Based on DAMA-DMBOK v2 Framework</p>
+    </div>
+  </header>
+
+  <section class="max-w-7xl mx-auto py-10 px-6">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">🔍 About the Training</h2>
+    <p class="mb-4">This comprehensive training program equips professionals with practical and strategic knowledge across all data management disciplines, aligned with the <strong><a href="https://dama.org/learning-resources/dama-data-management-body-of-knowledge-dmbok/"> DAMA-DMBOK v2</a></strong> framework. Learn how to govern, architect, and enable data as a business asset in your organization.</p>
+
+    <ul class="list-disc list-inside text-gray-700">
+      <li>Aligned with global standards and best practices</li>
+      <li>Real-world examples from banking, healthcare, and retail</li>
+      <li>Prep for CDMP (Certified Data Management Professional)</li>
+    </ul>
+  </section>
+
+  <section class="bg-white border-t border-b py-10 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-bold text-blue-700 mb-6">📚 Syllabus – DMBOK v2 Knowledge Areas</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-gray-700">
+        <ul class="list-disc list-inside">
+          <li>Data Governance</li>
+          <li>Data Architecture</li>
+          <li>Data Modeling & Design</li>
+          <li>Data Storage & Operations</li>
+          <li>Data Security</li>
+          <li>Data Integration & Interoperability</li>
+        </ul>
+        <ul class="list-disc list-inside">
+          <li>Document & Content Management</li>
+          <li>Reference & Master Data</li>
+          <li>Data Warehousing & BI</li>
+          <li>Metadata Management</li>
+          <li>Data Quality Management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto py-10 px-6">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">🎯 Who Should Attend</h2>
+    <ul class="list-disc list-inside text-gray-700">
+      <li>Data Architects & Engineers</li>
+      <li>Data Governance Leads</li>
+      <li>Business Analysts & Data Stewards</li>
+      <li>IT and Data Consultants</li>
+      <li>Professionals preparing for CDMP Certification</li>
+    </ul>
+  </section>
+
+  <section class="bg-gray-100 py-10 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">🧠 Learning Outcomes</h2>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Implement a structured data management strategy aligned with DAMA</li>
+        <li>Understand roles and responsibilities across the data lifecycle</li>
+        <li>Apply governance frameworks, metadata standards, and MDM best practices</li>
+        <li>Build a roadmap for enterprise-wide data management maturity</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto py-10 px-6">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">📜 Certification Path</h2>
+    <p class="text-gray-700 mb-4">Participants will receive a certificate of completion and be well-prepared for the official <strong>DAMA CDMP (Certified Data Management Professional)</strong> exam.</p>
+    <p class="text-sm text-gray-500">Note: DAMA International conducts the CDMP exam separately. We offer exam prep and practice tests as part of this training.</p>
+  </section>
+
+  
+
+<!-- Form Section -->
+
+  <section class="max-w-3xl mx-auto bg-white p-8 mt-6 rounded-xl shadow-md">
+    <form action="#" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label class="block mb-1 font-medium text-gray-700">Full Name</label>
+        <input type="text" name="name" required placeholder="Your name" class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      </div>
+
+      <div>
+        <label class="block mb-1 font-medium text-gray-700">Email Address</label>
+        <input type="email" name="email" required placeholder="you@example.com" class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      </div>
+
+      <div>
+        <label class="block mb-1 font-medium text-gray-700">Company / Organization</label>
+        <input type="text" name="company" required placeholder="Your Company" class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      </div>
+
+      <div>
+        <label class="block mb-1 font-medium text-gray-700">Phone Number</label>
+        <input type="tel" name="phone" placeholder="+91 98765 43210" class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      </div>
+
+      <div>
+        <label class="block mb-1 font-medium text-gray-700">Your Role</label>
+        <input type="text" name="role" placeholder="e.g., Engineering Manager" class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      </div>
+
+      <div>
+        <label class="block mb-1 font-medium text-gray-700">Number of Participants</label>
+        <select name="participants" class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+          <option value="1-5">1–5</option>
+          <option value="6-10">6–10</option>
+          <option value="11-20">11–20</option>
+          <option value="21+">21+</option>
+        </select>
+      </div>
+
+      <div class="md:col-span-2">
+        <label class="block mb-1 font-medium text-gray-700">What topics are most relevant to your team?</label>
+        <textarea name="interests" rows="4" placeholder="e.g., Spark, Delta Live Tables, ML Pipelines, etc." class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+      </div>
+
+      <div class="md:col-span-2">
+        <button type="submit" class="w-full bg-indigo-600 text-white text-lg font-semibold py-3 rounded-md hover:bg-indigo-700 transition">
+          Register for Training
+        </button>
+      </div>
+    </form>
+  </section>
+  
+  <section id="services" class="section">
+    <h2>All Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Strategy & Advisory</h3>
+        <ul>
+          <li><a href="analytics-roadmap.html">Analytics Roadmap</a></li>
+          <li><a href="data-strategy.html">Data Strategy</a></li>
+          <li><a href="platform-strategy.html">Platform Strategy</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Engineer Your Data</h3>
+        <ul>
+          <li><a href="data-modernization.html">Data Modernization</a></li>
+          <li><a href="data-foundation.html">Data Foundation</a></li>
+          <li><a href="data-operations.html">Data Operations</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Differentiate with AI/ML</h3>
+        <ul>
+          <li><a href="data-science.html">Data Science</a></li>
+          <li><a href="ai-engineering.html">AI Engineering</a></li>
+          <li><a href="ml-products-platforms.html">ML Products & Platforms</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Operationalize Insights</h3>
+        <ul>
+          <li><a href="experience-consulting.html">Experience Consulting</a></li>
+          <li><a href="application-engineering.html">Application Engineering</a></li>
+          <li><a href="business-intelligence.html">Business Intelligence</a></li>
+          <li><a href="mlops.html">MLOps</a></li>
+        </ul>
+      </div>
+	  <div class="card">
+        <h3>Training services</h3>
+        <ul>
+          <li><a href="Databricks_Bootcamp.html">Databricks Bootcamp</a></li>
+          <li><a href="snowflake_training.html">Snowflake</a></li>
+          <li><a href="ETRM_TRaining.html">ETRM</a></li>
+        </ul>
+      </div>
+    </div>
+	
+  </section>
+  
+  
+  <footer class="bg-gray-800 text-white text-sm text-center py-6">
+    <p>&copy; 2025 Durga Analytics. All rights reserved.</p>
+  </footer>
+</body>
+</html>
