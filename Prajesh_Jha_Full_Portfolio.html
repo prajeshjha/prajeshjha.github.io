@@ -11,7 +11,7 @@
     header { background-color: #2d2a5d; color: white; display: flex; align-items: center; padding: 1.2rem 2rem; justify-content: space-between; }
     header .logo { display: flex; align-items: center; gap: 1rem; }
     header .logo img { max-height: 90px; }
-    header .logo h1 { margin: 0; font-size: 1.8rem; }
+    
     nav { background: #1f1d3a; display: flex; justify-content: center; gap: 2rem; padding: 1rem; }
     nav a { color: white; text-decoration: none; font-weight: 500; }
     section { padding: 50px 20px; max-width: 1100px; margin: auto; }
@@ -20,14 +20,23 @@
     li { margin-bottom: 12px; }
     .role-block { background: #eef6ff; padding: 20px; margin-bottom: 25px; border-left: 5px solid #0074D9; }
     footer { background: #001f3f; color: #fff; text-align: center; padding: 25px; margin-top: 60px; }
+	.header {
+  display: flex;
+  align-items: center; /* Vertically align image and text */
+  gap: 1rem; /* Optional spacing between image and text */
+}
+	.header img {
+  height: 7em; /* Match the height to h1 size (adjust if needed) */
+}
   </style>
 </head>
 <body>
  <header>
-    <div class="logo">
-      <img src="Durga Analytics.png" alt="Durga Analytics Logo">
-      <h1>Prajesh Jha - Founder and CEO </h1>
-    </div>
+ 
+   <div class="header" align="center">
+  <img src="Durga Analytics.png" alt="Durga Analytics Logo">
+   <h1>Prajesh Jha - Founder and CEO </h1>
+</div>
   </header>
 
  <nav id="main-nav">

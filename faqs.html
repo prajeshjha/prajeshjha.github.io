@@ -8,6 +8,16 @@
   <style>
     body { font-family: 'Roboto', sans-serif; background-color: #f9f9f9; }
     h1 { color: #2d2a5d; }
+	
+		.header {
+  display: flex;
+  align-items: center; /* Vertically align image and text */
+  gap: 1rem; /* Optional spacing between image and text */
+}
+	.header img {
+  height: 7em; /* Match the height to h1 size (adjust if needed) */
+}
+
   </style>
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
@@ -39,7 +49,12 @@
 <body>
 
   <header class="bg-[#2d2a5d] text-white py-6 text-center">
-    <h1 class="text-3xl font-bold">FAQ</h1>
+    
+	
+	  <div class="header">
+  <img src="Durga Analytics.png" alt="Durga Analytics Logo">
+  <h1 class="text-3xl font-bold">FAQ</h1>
+</div>
     
   </header>
 <nav id="main-nav">
