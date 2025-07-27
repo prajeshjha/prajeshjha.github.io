@@ -51,23 +51,89 @@
       color: #666;
     }
   </style>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8fafc; color: #222; line-height: 1.6; }
+    header { background: #011f3f; color: #fff; text-align: center; padding: 60px 20px; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; max-width: 700px; margin: auto; }
+    section { padding: 50px 20px; max-width: 800px; margin: auto; }
+    .contact-box { background: #eef6ff; padding: 30px; border-left: 5px solid #0074D9; margin-top: 30px; font-size: 1.1rem; }
+    .contact-box p { margin: 15px 0; }
+    a { color: #0074D9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { background: #001f3f; color: #fff; text-align: center; padding: 25px; margin-top: 60px; }
+	
+	/* ========== NAVIGATION MENU ========== */
+nav {
+  background: #1f1d3a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+header {
+  background-color: #2d2a5d; /* dark background for contrast */
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+header .logo img {
+  max-height: 60px;
+  height: auto;
+  width: auto;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white; /* ensures white color for the heading */
+  white-space: nowrap;
+}
+
+  </style>
+  
 </head>
 <body>
   <div class="container">
-  <nav id="main-nav">
-  <a href="index.html">Home</a>
+ <nav id="main-nav">
+  <a href="index.html" >Home</a>
   <a href="services.html">Services</a>
   <a href="analytics-roadmap.html">Analytics Roadmap</a>
-  <a href="industries.html"  class="active">Industries</a>
+  <a href="industries.html">Industries</a>
   <a href="about.html">About</a>
   <a href="leadership.html">Leadership</a>
-  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="active">Contact</a>
   <a href="training.html">Training</a>
   <a href="careers.html">Careers</a>
   <a href="blog.html">Blog</a>
   <a href="faqs.html">FAQs</a>
 </nav>
-
     <h1>Real-Time Position & Exposure Dashboards</h1>
 	
     <h2>Empowering Operational Agility for a Power Utility</h2>
