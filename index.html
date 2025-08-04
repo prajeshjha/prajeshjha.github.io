@@ -1,425 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Durga Analytics | Strategy & Advisory | Engineer Your Data | Differentiate with AI/ML | Operationalize Insights | Training Services </title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-   <style>
-    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
-    header { background-color: #2d2a5d; color: white; display: flex; align-items: center; padding: 1.2rem 2rem; justify-content: space-between; }
-    header .logo { display: flex; align-items: center; gap: 1rem; }
-    header .logo img { max-height: 90px; }
-    header .logo h1 { margin: 0; font-size: 1.8rem; }
-    nav { background: #1f1d3a; display: flex; justify-content: center; gap: 2rem; padding: 1rem; }
-    nav a { color: white; text-decoration: none; font-weight: 500; }
-    .section { padding: 3rem 2rem; max-width: 960px; margin: auto; }
-    .hero { background-color: #ecebff; padding: 4rem 2rem; text-align: center; }
-    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    .hero p { font-size: 1.2rem; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-    .card { background-color: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    .card:nth-child(1) { background-color: #fff7e6; }
-    .card:nth-child(2) { background-color: #e0f7f6; }
-    .card:nth-child(3) { background-color: #dceefb; }
-    .card:nth-child(4) { background-color: #ffeedd; }
-    .card h3 { margin-top: 0; color: #2d2a5d; }
-    .card ul { padding-left: 1rem; }
-    .card ul li { margin-bottom: 0.5rem; }
-    h2 { color: #2d2a5d; }
-    .subpage { margin-top: 2rem; background: #f0f0fa; padding: 2rem; border-radius: 10px; }
-    .subpage h2 { margin-top: 0; }
-    a { color: #2d2a5d; text-decoration: none; }
-    footer { background-color: #2d2a5d; color: white; text-align: center; padding: 1.5rem; }
-	body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
-    header { background-color: #2d2a5d; color: white; display: flex; align-items: center; padding: 1.2rem 2rem; justify-content: space-between; }
-    header .logo { display: flex; align-items: center; gap: 1rem; }
-    header .logo img { max-height: 90px; }
-    header .logo h1 { margin: 0; font-size: 1.8rem; }
-    nav { background: #1f1d3a; display: flex; justify-content: center; gap: 2rem; padding: 1rem; }
-    nav a { color: white; text-decoration: none; font-weight: 500; }
-    section { padding: 3rem 2rem; max-width: 960px; margin: auto; }
-   
-    p { line-height: 1.6; }
-    .industry { background-color: #fff; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    footer { background-color: #2d2a5d; color: white; text-align: center; padding: 1.5rem; margin-top: 2rem; }
-	header {
-  background-color: #2d2a5d;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* center logo */
-  padding: 1.2rem 2rem;
-  text-align: center;
-  flex-wrap: wrap;
-}
-/* ========== HEADER STYLES ========== */
-header {
-  background-color: #2d2a5d;
-  text-align: center;
-  padding-bottom: 1rem;
-}
-
-/* Logo banner fills full width */
-.logo-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  animation: fadeIn 2s ease-in-out;
-}
-
-/* Title below the banner */
-.site-title {
-  margin: 1rem 0 0 0;
-  font-size: 2rem;
-  color: white;
-}
-
-/* If using horizontal logo + title instead */
-header .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: nowrap;
-  padding: 1.2rem 2rem;
-}
-
-header .logo img {
-  max-height: 60px;
-  height: auto;
-  width: auto;
-}
-
-header .logo h1 {
-  margin: 0;
-  font-size: 1.8rem;
-  color: white;
-  white-space: nowrap;
-}
-
-/* ========== NAVIGATION MENU ========== */
-nav {
-  background: #1f1d3a;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  transition: background 0.2s;
-}
-
-nav a:hover {
-  background: rgba(255,255,255,0.1);
-  border-radius: 5px;
-}
-nav a.active {
-  border-bottom: 2px solid #fff;
-}
-
-/* ========== ANIMATIONS ========== */
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-.fade-in-logo {
-  animation: fadeIn 2s ease-in-out;
-}
-
-
-  </style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Durga Analytics",
-  "url": "https://www.durgaanalytics.com",
-  "logo": "https://www.durgaanalytics.com/Durga_Analytics_logo.png",
-  "sameAs": [
-    "https://www.linkedin.com/company/durga-analytics"
-    ],
-  "description": "Empowering Decisions with Data & AI"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What services does Durga Analytics offer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We offer Strategy & Advisory, Data Engineering, AI/ML, BI, and Training Services."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you provide hands-on training?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, our training services include hands-on bootcamps in Databricks, Snowflake, ETRM, and more."
-      }
-    }
-  ]
-}
-</script>
-
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17032787363">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17032787363');
-</script>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durga Analytics - Empowering Decisions with Data & AI</title>
+    <meta name="description" content="From insights to implementation—Durga Analytics is your partner in transformation. Data & AI consulting for Banking, Energy Trading, Retail, and Social Impact.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-  <div class="logo-banner">
-    <img src="Durga Analytics.png" alt="Durga Analytics Logo" class="fade-in-logo">
-  </div>
-  
-</header>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>Durga Analytics</h2>
+				
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#industries" class="nav-link">Industries</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#leadership" class="nav-link">Leadership</a>
+                <a href="#training" class="nav-link">Training</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Empowering Decisions with Data & AI</h1>
+                <p class="hero-subtitle">From insights to implementation—Durga Analytics is your partner in transformation</p>
+                <p class="hero-description">Inspired by the strength and clarity symbolized by Goddess Durga, we bring a blend of strategy, technology, and purpose to help organizations make smarter, faster, and more impactful decisions with data.</p>
+                <a href="#contact" class="btn btn--primary btn--lg hero-cta">Book a Free Demo</a>
+            </div>
+        </div>
+    </section>
 
-  <nav id="main-nav">
-  <a href="index.html" class="active">Home</a>
-  <a href="services.html">Services</a>
-  <a href="analytics-roadmap.html">Analytics Roadmap</a>
-  <a href="industries.html">Industries</a>
-  <a href="about.html">About</a>
-  <a href="leadership.html">Leadership</a>
-  <a href="contact.html">Contact</a>
-  <a href="training.html">Training</a>
-  <a href="careers.html">Careers</a>
-  <a href="blog.html">Blog</a>
-  <a href="faqs.html">FAQs</a>
-</nav>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive data and AI solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3>Strategy & Advisory</h3>
+                    <ul>
+                        <li>Analytics Roadmap</li>
+                        <li>Data Strategy</li>
+                        <li>Platform Strategy</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Engineer Your Data</h3>
+                    <ul>
+                        <li>Data Modernization</li>
+                        <li>Data Foundation</li>
+                        <li>Data Operations</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧠</div>
+                    <h3>Differentiate with AI/ML</h3>
+                    <ul>
+                        <li>Data Science</li>
+                        <li>AI Engineering</li>
+                        <li>ML Products & Platforms</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>Operationalize Insights</h3>
+                    <ul>
+                        <li>Experience Consulting</li>
+                        <li>Application Engineering</li>
+                        <li>Business Intelligence</li>
+                        <li>MLOps</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Training Services</h3>
+                    <ul>
+                        <li>Databricks Bootcamp</li>
+                        <li>Snowflake</li>
+                        <li>ETRM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Industries Section -->
+    <section id="industries" class="industries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industries We Serve</h2>
+                <p>Deep expertise across key sectors driving digital transformation</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">💰</div>
+                    <h3>Banking & Financial Services</h3>
+                    <p>We help banks and financial institutions modernize their data platforms, improve risk management, and deliver personalized customer experiences. Our solutions support regulatory compliance, fraud detection, and advanced analytics for strategic decision-making.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">📈</div>
+                    <h3>Energy Trading Risk Management</h3>
+                    <p>Our expertise in ETRM/CTRM platforms like Openlink Endur / Findur enables energy trading firms to optimize their operations, manage risk effectively, and comply with market regulations. We deliver consulting, upgrades, automation, and training services tailored to this complex industry.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">🛒</div>
+                    <h3>Retail & Consumer Goods</h3>
+                    <p>We empower retailers and consumer goods companies with data-driven insights for supply chain optimization, personalized marketing, and enhanced customer experiences. Our solutions help you react to market changes faster and drive sustainable growth.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">🌳</div>
+                    <h3>Social Impact & Rural Development</h3>
+                    <p>We partner with NGOs, government agencies, and social enterprises to use data for good. Our solutions support program monitoring, impact evaluation, and resource allocation to improve outcomes in education, health, rural development, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="home" class="hero">
-    <h1>Empowering Decisions with Data & AI</h1>
-    <p>From insights to implementation—Durga Analytics is your partner in transformation.</p>
-</section>
-  
-  
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Durga Analytics</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-mission">Inspired by the strength and clarity symbolized by Goddess Durga, we bring a blend of strategy, technology, and purpose to help organizations make smarter, faster, and more impactful decisions with data.</p>
+                    <p>At Durga Analytics, we believe that data is not just numbers—it's the foundation for transformation. Our team combines deep technical expertise with strategic business acumen to deliver solutions that don't just analyze data, but turn it into actionable insights that drive real business value.</p>
+                    <p>We are committed to bringing clarity and courage to organizations navigating the complexities of modern data landscapes, helping them harness the power of AI and analytics to achieve their most ambitious goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="services" class="section">
-    <h2>All Services</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>💡⚙️ Strategy & Advisory</h3>
-        <ul>
-          <li><a href="analytics-roadmap.html">Analytics Roadmap</a></li>
-          <li><a href="data-strategy.html">Data Strategy</a></li>
-          <li><a href="platform-strategy.html">Platform Strategy</a></li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>{ }📊 Engineer Your Data</h3>
-        <ul>
-          <li><a href="data-modernization.html">Data Modernization</a></li>
-          <li><a href="data-foundation.html">Data Foundation</a></li>
-          <li><a href="data-operations.html">Data Operations</a></li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>🧩🧠 Differentiate with AI/ML</h3>
-        <ul>
-          <li><a href="data-science.html">Data Science</a></li>
-          <li><a href="ai-engineering.html">AI Engineering</a></li>
-          <li><a href="ml-products-platforms.html">ML Products & Platforms</a></li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>🔄✅ Operationalize Insights</h3>
-        <ul>
-          <li><a href="experience-consulting.html">Experience Consulting</a></li>
-          <li><a href="application-engineering.html">Application Engineering</a></li>
-          <li><a href="business-intelligence.html">Business Intelligence</a></li>
-          <li><a href="mlops.html">MLOps</a></li>
-        </ul>
-      </div>
-	  <div class="card">
-        <h3>🎓 Training services</h3>
-        <ul>
-          <li><a href="Databricks_Bootcamp.html">Databricks Bootcamp</a></li>
-          <li><a href="snowflake_training.html">Snowflake</a></li>
-          <li><a href="ETRM_TRaining.html">ETRM</a></li>
-        </ul>
-      </div>
-    </div>
-	
-  </section>
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership">
+        <div class="container">
+            <div class="section-header">
+                <h2>Leadership</h2>
+            </div>
+            <div class="leader-profile">
+                <div class="leader-info">
+                    <h3>Prajesh Jha</h3>
+                    <p class="leader-title">Founder and CEO</p>
+                    <p class="leader-background">With over 20 years of experience in financial services, consulting, and technology innovation, Prajesh has built and led high-performing teams across Fortune 500 firms, startups, and public sector programs.</p>
+                    
+                    <div class="leader-expertise">
+                        <h4>Core Expertise:</h4>
+                        <ul>
+                            <li>Cloud-native data platforms: Databricks, Snowflake, GCP, AWS</li>
+                            <li>Data governance, quality, lineage, and compliance</li>
+                            <li>AI/ML implementation for BFSI, healthcare, and social development</li>
+                            <li>Product management, pre-sales, and strategic consulting</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="leader-vision"><strong>Vision:</strong> Prajesh envisions Durga Analytics as a force that brings clarity and courage—values symbolized by Goddess Durga—to organizations navigating the complexities of modern data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section >
-    <h2 ><a href="industries.html">Industries We Serve</a></h2>
-	</br>
+    <!-- Training Section -->
+    <section id="training" class="training">
+        <div class="container">
+            <div class="section-header">
+                <h2>Training Programs</h2>
+                <p>Comprehensive training programs to upskill your team</p>
+            </div>
+            <div class="training-grid">
+                <div class="training-card">
+                    <h3>Databricks Bootcamp</h3>
+                    <p>This hands-on training is designed for data teams aiming to leverage the Databricks platform to build scalable data pipelines, perform advanced analytics, and integrate AI/ML workflows in a modern cloud environment.</p>
+                </div>
+                <div class="training-card">
+                    <h3>Snowflake Training</h3>
+                    <p>Comprehensive Snowflake training program for professionals aiming to build end-to-end data skills on the Snowflake platform. Learn through real-world labs, project work, and live instruction.</p>
+                </div>
+                <div class="training-card">
+                    <h3>ETRM ENDUR Training</h3>
+                    <p>This instructor-led training program delivers deep technical and functional understanding of OpenLink Endur—covering deal lifecycle, risk configuration, trade capture, settlements, and reporting workflows.</p>
+                </div>
+                <div class="training-card">
+                    <h3>Data Management Training</h3>
+                    <p>This comprehensive training program equips professionals with practical and strategic knowledge across all data management disciplines, aligned with the DAMA-DMBOK v2 framework.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="industry">
-      <h2><a href="banking-financial-services.html">👛💰 Banking & Financial Services</a></h2>
-      <p>We help banks and financial institutions modernize their data platforms, improve risk management, and deliver personalized customer experiences. Our solutions support regulatory compliance, fraud detection, and advanced analytics for strategic decision-making.</p>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to transform your data into actionable insights? Let's discuss your needs.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company</label>
+                            <input type="text" id="company" name="company" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="topics" class="form-label">Discussion Topics</label>
+                            <textarea id="topics" name="topics" class="form-control" rows="4" placeholder="Tell us about your data challenges and goals..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p><a href="mailto:contact@durgaanalytics.com">contact@durgaanalytics.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="industry">
-      <h2><a href="ETRM.html">🔥📈 Energy Trading Risk Management</a></h2>
-      <p>Our expertise in ETRM/CTRM platforms like Openlink Endur / Findur enables energy trading firms to optimize their operations, manage risk effectively, and comply with market regulations. We deliver consulting, upgrades, automation, and training services tailored to this complex industry.</p>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Durga Analytics</h3>
+                    <p>Empowering Decisions with Data & AI</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>contact@durgaanalytics.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="#" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Durga Analytics Solutions Pvt. Ltd.</p>
+            </div>
+        </div>
+    </footer>
 
-    <div class="industry">
-      <h2><a href="retail-consumer-goods.html">🛒 Retail & Consumer Goods</a></h2>
-      <p>We empower retailers and consumer goods companies with data-driven insights for supply chain optimization, personalized marketing, and enhanced customer experiences. Our solutions help you react to market changes faster and drive sustainable growth.</p>
-    </div>
-
-    <div class="industry">
-      <h2><a href="social-impact-rural-development.html">🛖🌳🛤️ Social Impact & Rural Development</a></h2>
-      <p>We partner with NGOs, government agencies, and social enterprises to use data for good. Our solutions support program monitoring, impact evaluation, and resource allocation to improve outcomes in education, health, rural development, and more.</p>
-    </div>
-  </section>
-  
-  <section id="promo-video" class="section">
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-    <iframe
-      src="https://www.youtube.com/embed/6r4lxo37sMg"
-      frameborder="0"
-      allowfullscreen
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-      title="Durga Analytics Intro"
-    ></iframe>
-  </div>
-  </section>
-  
-<section class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-2xl shadow-md">
-    <h2 class="text-3xl font-semibold text-gray-800 mb-4">💬📅 Book a Free Demo</h2>
-    <p class="text-gray-600 mb-6">
-      Discover how Durga Analytics can transform your data strategy and empower better decision-making. Fill out the form below and we'll schedule a personalized walkthrough.
-    </p>
-
-    <form class="grid grid-cols-1 md:grid-cols-2 gap-6" name="FreeDemo"  netlify method="POST" enctype="multipart/form-data">
-      <div>
-        <label class="block mb-1 text-sm font-medium text-gray-700">Full Name</label>
-        <input type="text"  name ="Full_Name" placeholder="Your name" class="w-full p-3 border rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
-      </div>
-
-      <div>
-        <label class="block mb-1 text-sm font-medium text-gray-700">Email</label>
-        <input type="email" name ="email" placeholder="you@company.com" class="w-full p-3 border rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
-      </div>
-
-      <div>
-        <label class="block mb-1 text-sm font-medium text-gray-700">Company</label>
-        <input type="text"  name ="Company" placeholder="Company name" class="w-full p-3 border rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
-      </div>
-
-      <div>
-        <label class="block mb-1 text-sm font-medium text-gray-700">Phone Number</label>
-        <input type="tel"  name ="Phone_Number" placeholder="+91 98765 43210" class="w-full p-3 border rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
-      </div>
-
-      <div class="md:col-span-2">
-        <label class="block mb-1 text-sm font-medium text-gray-700">What would you like to discuss?</label>
-        <textarea rows="4"  name ="discuss_point" placeholder="e.g., Data Strategy, AI Roadmap, Platform Modernization" class="w-full p-3 border rounded-lg focus:ring-indigo-500 focus:border-indigo-500"></textarea>
-      </div>
-
-      <div class="md:col-span-2">
-        <button type="submit" class="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg hover:bg-indigo-700 transition">Book a Free Demo</button>
-      </div>
-    </form>
-  </section>
-  <section id="about" class="section">
-    
-	<a href="about.html"><h2>About Durga Analytics</h2></a>
-    <p>Inspired by the strength and clarity symbolized by Goddess Durga, we bring a blend of strategy, technology, and purpose to help organizations make smarter, faster, and more impactful decisions with data.</p>
-  </section>
-
-  <section id="contact" class="section">
-    
-
-	<a href="contact.html"><h1>Contact Us</h1></a>
-	
-<a href="mailto:contact@durgaanalytics.com" 
-   style="display: inline-flex; align-items: center; text-decoration: none; font-family: Arial, sans-serif; font-size: 16px; color: #000;">
-  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/maildotru.svg" 
-       alt="Email" 
-       style="width: 24px; height: 24px; margin-right: 8px;" />
-  Email us at contact@durgaanalytics.com
-</a>
-
-    
-</br>
-
-<a href="https://www.linkedin.com/company/durga-analytics"
-   target="_blank" 
-   rel="noopener noreferrer" 
-   style="display: inline-flex; align-items: center; text-decoration: none; font-family: Arial, sans-serif; font-size: 16px; color: #0A66C2;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
-       alt="LinkedIn" 
-       style="width: 24px; height: 24px; margin-right: 8px;" />
-  Connect with us on LinkedIn
-</a>
-</br>
-
-	<a href="https://wa.me/919560116736?text=Hi%2C%20I%27m%20interested%20in%20your%20Data%20and%20AI%20services." 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   style="display: inline-flex; align-items: center; text-decoration: none; font-family: Arial, sans-serif; font-size: 16px; color: #25D366;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-       alt="WhatsApp" 
-       style="width: 24px; height: 24px; margin-right: 8px;" />
-  Chat with us on WhatsApp
-</a>
-
-	<p>&copy; 2025 Durga Analytics Solutions Pvt. Ltd. |
-        <a href="Privacy.html" target="_blank">Privacy Policy</a>
-    </p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Durga Analytics. All rights reserved.</p>
-</footer>
-  <script>
- window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
-  }, 1000); // delay by 2 seconds to let logo fade-in finish
-});
-
-</script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6879e8937f202b19181ee89e/1j0e39181';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    <script src="app.js"></script>
 </body>
 </html>
